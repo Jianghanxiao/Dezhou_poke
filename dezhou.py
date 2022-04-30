@@ -98,7 +98,7 @@ def leftTONGHUA(pool):
 
 def leftSZ(pool):
     all_ths = []
-    for number in range(1, 10):
+    for number in range(1, 11):
         all_ths.append(shunzi('a', number))
 
     modified_pool = []
@@ -113,7 +113,8 @@ def leftSZ(pool):
             if hjths[i] not in modified_pool:
                 left += 1
         min_left = min(left, min_left)
-
+    import pdb
+    pdb.set_trace()
     return min_left
 
 def leftLD(pool):
