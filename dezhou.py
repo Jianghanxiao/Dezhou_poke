@@ -113,8 +113,6 @@ def leftSZ(pool):
             if hjths[i] not in modified_pool:
                 left += 1
         min_left = min(left, min_left)
-    import pdb
-    pdb.set_trace()
     return min_left
 
 def leftLD(pool):
